@@ -560,19 +560,17 @@ body {
 /*-----------Footer-social---------*/
 
 .footer-social {
-    width: 206px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-left: 70px;
+    margin-left: 70px;
 }
 
 .social-title {
     width: 100%;
+    display: block;
     margin-top: 0;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--header-background-color);
+    margin-bottom: 20px;
 }
 
 .footer-social-link {
@@ -580,6 +578,12 @@ body {
 }
 
 .footer-social-link>.social-team-icon {
+    fill: var(--header-background-color);
+}
+
+.team-soc-icon-footer {
+    width: 20px;
+    height: 20px;
     fill: var(--header-background-color);
 }
 
@@ -642,7 +646,8 @@ body {
     display: block;
 }
 
-.portfolio-cover:hover {
+.portfolio-image-link:hover,
+.portfolio-image-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
